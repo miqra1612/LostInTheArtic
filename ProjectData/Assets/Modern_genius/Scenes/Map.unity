@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &111760392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111760391}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6ccb290e2b86a14883f1a3d586c6a60, type: 3}
   m_Name: 
@@ -161,11 +161,21 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
-  room1PuzzleOpen: 
-  room2PuzzleOpen: 
-  room3PuzzleOpen: 
-  room4PuzzleOpen: 
-  room5PuzzleOpen: 
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 0000000000
+  room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
+  room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
+  room4PuzzleOpen: 0000000000
+  innerTemplePuzzleOpen: 0000000000
+  room5PuzzleOpen: 0000000000
 --- !u!4 &111760393
 Transform:
   m_ObjectHideFlags: 0

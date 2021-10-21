@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020759653}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6ccb290e2b86a14883f1a3d586c6a60, type: 3}
   m_Name: 
@@ -1093,10 +1093,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &1020759655
 Transform:
@@ -1632,7 +1644,7 @@ GameObject:
   - component: {fileID: 1471847248}
   - component: {fileID: 1471847247}
   m_Layer: 5
-  m_Name: Submit Button
+  m_Name: EnterCave Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1841,7 +1853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1519077778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2990,24 +3002,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameData: {fileID: 0}
-  backgroundImage: {fileID: 2110644606}
-  unlockSprite: {fileID: 21300000, guid: e61623a6123037a4c917e3574328eed4, type: 3}
+  sceneController: {fileID: 2124144851}
   cluePuzzleBtn1: {fileID: 1659035686}
-  cluePuzzleBtn2: {fileID: 0}
-  clueBtn1: {fileID: 0}
+  enterCaveBtn: {fileID: 1471847247}
   puzzleClue1: {fileID: 154470108}
-  puzzleClue2: {fileID: 0}
-  clue1: {fileID: 0}
-  answerPanel1: {fileID: 0}
-  answerPanel2: {fileID: 0}
-  puzzleInput1: {fileID: 0}
-  notificationDisplay: {fileID: 0}
-  puzzleInput2: {fileID: 0}
-  notificationDisplay2: {fileID: 0}
-  puzzleAnswer1:
-  - Alpha Zeta Eta Delta
-  puzzleAnswer2:
-  - TESTER
-  lastRoom: 0
   tweenDelay: 1
   openWindow: []

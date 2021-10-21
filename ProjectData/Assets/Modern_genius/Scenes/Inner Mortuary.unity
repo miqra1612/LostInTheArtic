@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124144855}
+      - m_Target: {fileID: 0}
         m_MethodName: CheckingAnswer1
         m_Mode: 6
         m_Arguments:
@@ -2267,7 +2267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077004475}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6ccb290e2b86a14883f1a3d586c6a60, type: 3}
   m_Name: 
@@ -2283,10 +2283,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &1077004477
 Transform:
@@ -2838,8 +2850,8 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 1, g: 0.90096486, b: 0, a: 0.60784316}
     m_PressedColor: {r: 1, g: 0.90096486, b: 0, a: 0.60784316}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2964,13 +2976,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.02
-  m_Text: '6384
+  m_Text: 'Go back to the snowmobile in the station
 
 
-    ERA
-
-
-'
+    Coordinate is B7'
 --- !u!222 &1708162391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3069,7 +3078,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map
+          m_StringArgument: Second Room
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1731547949
@@ -3269,7 +3278,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124144855}
+      - m_Target: {fileID: 2124144853}
         m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
@@ -3947,8 +3956,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2124144852}
   - component: {fileID: 2124144851}
-  - component: {fileID: 2124144855}
   - component: {fileID: 2124144854}
+  - component: {fileID: 2124144853}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -3982,6 +3991,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2124144853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124144850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d189d8e7d32c7be4f8b3e67ed1784309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData: {fileID: 0}
+  sceneController: {fileID: 2124144851}
+  clueBtn1: {fileID: 1659035686}
+  clue1: {fileID: 15523428}
+  lastRoom: 0
+  tweenDelay: 1
+  openWindow: []
 --- !u!114 &2124144854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3997,47 +4025,9 @@ MonoBehaviour:
   cluePanel: {fileID: 1444777949}
   clueWarning: {fileID: 46956111}
   clueOpen: 0
-  room: 1
+  room: 7
   gameData: {fileID: 0}
   tweenDelay: 1
---- !u!114 &2124144855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124144850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de04cbbf5eb0d514da4019e1e23fe70c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameData: {fileID: 0}
-  backgroundImage: {fileID: 2110644606}
-  unlockSprite: {fileID: 21300000, guid: 717c396e7a0b7dc46b117dbf93cfb741, type: 3}
-  cluePuzzleBtn1: {fileID: 0}
-  cluePuzzleBtn2: {fileID: 0}
-  clueBtn1: {fileID: 0}
-  clueBtn2: {fileID: 0}
-  clueBtn3: {fileID: 1659035686}
-  puzzleClue1: {fileID: 0}
-  puzzleClue2: {fileID: 0}
-  clue1: {fileID: 15523428}
-  clue2: {fileID: 0}
-  clue3: {fileID: 0}
-  answerPanel1: {fileID: 0}
-  answerPanel2: {fileID: 0}
-  puzzleInput1: {fileID: 0}
-  notificationDisplay: {fileID: 0}
-  puzzleInput2: {fileID: 0}
-  notificationDisplay2: {fileID: 0}
-  puzzleAnswer1:
-  - 6384
-  puzzleAnswer2:
-  - ERA
-  lastRoom: 0
-  tweenDelay: 1
-  openWindow: []
 --- !u!1 &2124875865
 GameObject:
   m_ObjectHideFlags: 0

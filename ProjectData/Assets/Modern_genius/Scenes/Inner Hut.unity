@@ -4780,12 +4780,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '38552074
-
-
-    3567
-
-'
+  m_Text: Go outside, look for the key
 --- !u!222 &1665322892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6311,10 +6306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1.
-
-
-    2.'
+  m_Text: 1.
 --- !u!222 &2011906299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6522,7 +6514,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 40
   m_Viewport: {fileID: 1399501159}
   m_HorizontalScrollbar: {fileID: 26693883}
   m_VerticalScrollbar: {fileID: 1478036148}
@@ -6936,11 +6928,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
   innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 
+  innerMortuaryPuzzleOpen: 
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 
+  innerTemplePuzzleOpen: 
   room5PuzzleOpen: 0000000000
 --- !u!4 &2100779640
 Transform:
@@ -7094,7 +7097,7 @@ MonoBehaviour:
   cluePanel: {fileID: 1516429694}
   clueWarning: {fileID: 2070660746}
   clueOpen: 0
-  room: 0
+  room: 5
   gameData: {fileID: 0}
   tweenDelay: 1
 --- !u!114 &2124144855

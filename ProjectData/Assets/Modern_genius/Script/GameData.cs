@@ -23,6 +23,12 @@ public class GameData : MonoBehaviour
     public bool clue3Open = false;
     public bool clue4Open = false;
     public bool clue5Open = false;
+    public bool clue6Open = false;
+    public bool clue7Open = false;
+    public bool clue8Open = false;
+    public bool clue9Open = false;
+    public bool clue10Open = false;
+    public bool clue11Open = false;
 
     [Header("This part is for room1 data")]
     public bool[] room1PuzzleOpen;
@@ -33,11 +39,26 @@ public class GameData : MonoBehaviour
     [Header("This part is for room2 data")]
     public bool[] room2PuzzleOpen;
 
+    [Header("This part is for Inner Hut data")]
+    public bool[] innerStationPuzzleOpen;
+
+    [Header("This part is for Inner Hut data")]
+    public bool[] innerMortuaryPuzzleOpen;
+
     [Header("This part is for room3 data")]
     public bool[] room3PuzzleOpen;
 
+    [Header("This part is for Inner Hut data")]
+    public bool[] innerChurchPuzzleOpen;
+
     [Header("This part is for room4 data")]
     public bool[] room4PuzzleOpen;
+
+    [Header("This part is for Inner Hut data")]
+    public bool[] innerCavePuzzleOpen;
+
+    [Header("This part is for Inner Hut data")]
+    public bool[] innerTemplePuzzleOpen;
 
     [Header("This part is for room5 data")]
     public bool[] room5PuzzleOpen;
