@@ -15,6 +15,12 @@ public enum Room
     Room3,
     Room4,
     Room5,
+    InnerHut,
+    InnerFacilityX4,
+    InnerMortuary,
+    InnerChurch,
+    InnerCave,
+    InnerTemple
 }
 
 public class HintManager : MonoBehaviour
@@ -63,6 +69,30 @@ public class HintManager : MonoBehaviour
         {
             clueOpen = gameData.clue5Open;
         }
+        else if (room == Room.InnerHut)
+        {
+            clueOpen = gameData.clue6Open;
+        }
+        else if (room == Room.InnerFacilityX4)
+        {
+            clueOpen = gameData.clue7Open;
+        }
+        else if (room == Room.InnerMortuary)
+        {
+            clueOpen = gameData.clue8Open;
+        }
+        else if (room == Room.InnerChurch)
+        {
+            clueOpen = gameData.clue9Open;
+        }
+        else if (room == Room.InnerTemple)
+        {
+            clueOpen = gameData.clue10Open;
+        }
+        else if (room == Room.InnerCave)
+        {
+            clueOpen = gameData.clue11Open;
+        }
     }
 
     //This function is used to save activated hint status to the game data
@@ -87,6 +117,30 @@ public class HintManager : MonoBehaviour
         else if (room == Room.Room5)
         {
            gameData.clue5Open = clueOpen;
+        }
+        else if (room == Room.InnerHut)
+        {
+            gameData.clue6Open = clueOpen;
+        }
+        else if (room == Room.InnerFacilityX4)
+        {
+            gameData.clue7Open = clueOpen;
+        }
+        else if (room == Room.InnerMortuary)
+        {
+            gameData.clue8Open = clueOpen;
+        }
+        else if (room == Room.InnerChurch)
+        {
+            gameData.clue9Open = clueOpen;
+        }
+        else if (room == Room.InnerTemple)
+        {
+            gameData.clue10Open = clueOpen;
+        }
+        else if (room == Room.InnerCave)
+        {
+            gameData.clue11Open = clueOpen;
         }
     }
     public float tweenDelay = 1f;
