@@ -455,6 +455,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146259627}
   m_CullTransparentMesh: 0
+--- !u!1 &167348312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167348313}
+  m_Layer: 5
+  m_Name: DummyPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &167348313
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167348312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2110644605}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &195107213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1822,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 701171701}
   m_OnClick:
     m_PersistentCalls:
@@ -2412,13 +2447,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: '1.
-
-
-    2.
-
-
-    3.'
+  m_Text: 1.
 --- !u!222 &1007119829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3638,15 +3667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: '210
-
-
-    EROCH
-
-
-    3 8 9 11 14
-
-'
+  m_Text: Look for the stone
 --- !u!222 &1477905440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4027,7 +4048,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581309958}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6ccb290e2b86a14883f1a3d586c6a60, type: 3}
   m_Name: 
@@ -4043,10 +4064,20 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
   room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &1581309960
 Transform:
@@ -5579,6 +5610,7 @@ RectTransform:
   - {fileID: 1659035685}
   - {fileID: 1351400109}
   - {fileID: 1731547947}
+  - {fileID: 167348313}
   m_Father: {fileID: 488723120}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5700,32 +5732,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameData: {fileID: 0}
+  sceneController: {fileID: 2124144851}
   cluePuzzleBtn1: {fileID: 510577449}
-  cluePuzzleBtn2: {fileID: 510577449}
-  cluePuzzleBtn3: {fileID: 0}
-  clueBtn1: {fileID: 1659035686}
-  clueBtn2: {fileID: 1594419276}
+  cluePuzzleBtn2: {fileID: 701171700}
+  cluePuzzleBtn3: {fileID: 1343636566}
+  clueBtn1: {fileID: 1594419276}
+  clueBtn2: {fileID: 1659035686}
   puzzleClue1: {fileID: 1938493826}
-  puzzleClue2: {fileID: 0}
-  puzzleClue3: {fileID: 0}
-  clue1: {fileID: 1920732059}
-  clue2: {fileID: 727334086}
-  answerPanel1: {fileID: 0}
-  answerPanel2: {fileID: 0}
-  answerPanel3: {fileID: 0}
-  puzzleInput1: {fileID: 1581249417}
-  notificationDisplay1: {fileID: 1601143879}
-  puzzleInput2: {fileID: 0}
-  notificationDisplay2: {fileID: 0}
-  puzzleInput3: {fileID: 0}
-  notificationDisplay3: {fileID: 0}
-  puzzleAnswer1:
-  - 210
-  puzzleAnswer2:
-  - EROCH
-  puzzleAnswer3:
-  - 3891114
-  - 3 8 9 11 14
+  clue1: {fileID: 727334086}
+  clue2: {fileID: 1920732059}
+  answerPanel1: {fileID: 167348313}
   lastRoom: 0
   tweenDelay: 1
   openWindow: []

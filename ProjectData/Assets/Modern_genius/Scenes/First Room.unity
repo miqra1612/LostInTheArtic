@@ -3253,7 +3253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Symbol
+  m_text: 'Symbol 2
 
 
     Is this blood?'
@@ -5629,7 +5629,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.039233685, g: 0, b: 1, a: 1}
     m_PressedColor: {r: 0.039233685, g: 0, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5748,7 +5748,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_HighlightedColor: {r: 1, g: 0.3962264, b: 0.9724757, a: 1}
     m_PressedColor: {r: 1, g: 0.3962264, b: 0.9724757, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.50980395}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6020,7 +6020,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.94305706, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 0.94305706, b: 0, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6146,12 +6146,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '38552074
+  m_Text: 'The door lock is 8241
 
 
-    3567
-
-'
+    You should go due west'
 --- !u!222 &1665322892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6222,7 +6220,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.30079713, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 0.30079713, b: 0, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -8079,7 +8077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2100779639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8103,11 +8101,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
   innerHutPuzzleOpen: 0000010000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 
+  innerMortuaryPuzzleOpen: 
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 
+  innerTemplePuzzleOpen: 
   room5PuzzleOpen: 0000000000
 --- !u!4 &2100779640
 Transform:

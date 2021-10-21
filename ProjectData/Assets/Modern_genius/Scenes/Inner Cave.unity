@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 546777860}
   - component: {fileID: 546777859}
   m_Layer: 5
-  m_Name: Text Drawwer Puzzle
+  m_Name: Text Door Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 1137645772}
   - component: {fileID: 1137645771}
   m_Layer: 5
-  m_Name: InputField Drawwer
+  m_Name: InputField Door Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2260,7 +2260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1516429694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2776,12 +2776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '38552074
-
-
-    3567
-
-'
+  m_Text: The door lock is 6124216
 --- !u!222 &1665322892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2954,7 +2949,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map
+          m_StringArgument: Fourth Room
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1731547949
@@ -3617,7 +3612,7 @@ MonoBehaviour:
   m_Text: '1.
 
 
-    2.'
+'
 --- !u!222 &2011906299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3773,7 +3768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2070660746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3873,10 +3868,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 0000000000
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &2100779640
 Transform:
@@ -3980,8 +3987,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2124144852}
   - component: {fileID: 2124144851}
-  - component: {fileID: 2124144853}
   - component: {fileID: 2124144854}
+  - component: {fileID: 2124144853}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -4024,36 +4031,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2124144850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a768fe769ec7ff14780f8938965a6a2a, type: 3}
+  m_Script: {fileID: 11500000, guid: eaa133df5a25dce4ea6f44988ee01c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameData: {fileID: 0}
-  cluePuzzleBtn1: {fileID: 0}
-  cluePuzzleBtn2: {fileID: 0}
-  clueBtn1: {fileID: 1594419276}
-  clueBtn2: {fileID: 0}
-  clueBtn3: {fileID: 0}
-  clueBtn4: {fileID: 0}
-  clueBtn5: {fileID: 0}
-  clueBtn6: {fileID: 1659035686}
+  sceneController: {fileID: 2124144851}
+  cluePuzzleBtn1: {fileID: 1594419276}
+  clueBtn1: {fileID: 1659035686}
   puzzleClue1: {fileID: 151715140}
-  puzzleClue2: {fileID: 0}
   clue1: {fileID: 15523428}
-  clue2: {fileID: 0}
-  clue3: {fileID: 0}
-  clue4: {fileID: 0}
-  clue5: {fileID: 0}
-  clue6: {fileID: 0}
-  answerPanel1: {fileID: 0}
-  answerPanel2: {fileID: 0}
-  puzzleInput: {fileID: 1137645771}
+  puzzleInput1: {fileID: 1137645771}
   notificationDisplay: {fileID: 546777859}
-  puzzleInput2: {fileID: 0}
-  notificationDisplay2: {fileID: 0}
-  puzzle1Answers:
-  - 38552074
-  puzzle2Answers:
-  - 3567
+  puzzleAnswer1:
+  - 6124216
   lastRoom: 0
   tweenDelay: 1
   openWindow: []
@@ -4072,6 +4062,6 @@ MonoBehaviour:
   cluePanel: {fileID: 1516429694}
   clueWarning: {fileID: 2070660746}
   clueOpen: 0
-  room: 0
+  room: 9
   gameData: {fileID: 0}
   tweenDelay: 1

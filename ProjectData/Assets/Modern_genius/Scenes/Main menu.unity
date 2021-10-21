@@ -911,11 +911,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
   innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 0000000000
+  innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 0000000000
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &794041318
 Transform:
@@ -1066,20 +1077,21 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.98233366, g: 1, b: 0, a: 1}
+    m_PressedColor: {r: 0.98233366, g: 1, b: 0, a: 1}
+    m_SelectedColor: {r: 0.1622641, g: 0.4811321, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 90727ef1e5c911a4ebb89c62265b4dd6, type: 3}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 764804e4f051ea0498a5867d582fe3f4,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 764804e4f051ea0498a5867d582fe3f4, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 764804e4f051ea0498a5867d582fe3f4, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 764804e4f051ea0498a5867d582fe3f4, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1408,7 +1420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1229287767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2171,7 +2183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: v 0.1.0
+  m_Text: v 1.0.0
 --- !u!222 &1945672177
 CanvasRenderer:
   m_ObjectHideFlags: 0
