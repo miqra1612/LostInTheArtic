@@ -45,17 +45,21 @@ public class LastRoomDialogManager : MonoBehaviour
     // Update is called once per frame
     public void UpdateDialog()
     {
-        if (advanceDialogue)
+        //if (advanceDialogue)
+        //{
+
+        //}
+
+        StopAllCoroutines();
+
+        if (id < dialogDatas.Count - 1)
         {
-            if (id < dialogDatas.Count - 1)
-            {
-                id++;
-                StartCoroutine(Dialog(id));
-            }
-            else
-            {
-                StartCoroutine(CalculateFinishTime());
-            }
+            id++;
+            StartCoroutine(Dialog(id));
+        }
+        else
+        {
+            StartCoroutine(CalculateFinishTime());
         }
     }
 

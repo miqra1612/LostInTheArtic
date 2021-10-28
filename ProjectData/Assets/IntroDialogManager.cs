@@ -12,6 +12,7 @@ public class IntroDialogManager : MonoBehaviour
 
     public TextMeshProUGUI dialogScreen;
     public float dialogSpeed = 0.01f;
+    public float firstTimeDelay = 1f;
     private int id = 0;
     public List<DialogData> introDialogue;
     private bool firstTime = true;
@@ -20,7 +21,8 @@ public class IntroDialogManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        continueBtn.onClick.AddListener(() => StartDialogue());
+        //continueBtn.onClick.AddListener(() => StartDialogue());
+        StartDialogue();
     }
 
     public void StartDialogue()
@@ -31,32 +33,39 @@ public class IntroDialogManager : MonoBehaviour
     // Update is called once per frame
     public void UpdateDialog()
     {
-        if (advanceDialogue)
+        //if (advanceDialogue)
+        //{
+
+        //}
+
+        StopAllCoroutines();
+
+        if (id < introDialogue.Count - 1)
         {
-            if (id < introDialogue.Count-1)
-            {
-                id++;
-                StartCoroutine(Dialog(id));
-            }
-            else
-            {
-                sceneController.OpenScene("Map");
-            }
+            id++;
+
+            StartCoroutine(Dialog(id));
+        }
+        else
+        {
+            sceneController.OpenScene("Map");
         }
     }
 
     IEnumerator Dialog(int id)
     {
+        yield return new WaitForEndOfFrame();
+
         var dialog = introDialogue[id].dialog;
 
         dialogScreen.text = string.Empty;
 
-        advanceDialogue = false;
+        //advanceDialogue = false;
 
         if (firstTime)
         {
             firstTime = false;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(firstTimeDelay);
         }
 
         foreach (char a in dialog)
@@ -65,6 +74,6 @@ public class IntroDialogManager : MonoBehaviour
             yield return new WaitForSeconds(dialogSpeed);
         }
 
-        advanceDialogue = true;
+        //advanceDialogue = true;
     }
 }
