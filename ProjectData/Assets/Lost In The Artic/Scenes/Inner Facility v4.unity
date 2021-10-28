@@ -4592,15 +4592,15 @@ MonoBehaviour:
   clue10Open: 0
   clue11Open: 0
   room1PuzzleOpen: 0000000000
-  innerHutPuzzleOpen: 
+  innerHutPuzzleOpen: 0000000000
   room2PuzzleOpen: 0000000000
   innerStationPuzzleOpen: 0000000000
   innerMortuaryPuzzleOpen: 0000000000
   room3PuzzleOpen: 0000000000
   innerChurchPuzzleOpen: 0000000000
   room4PuzzleOpen: 0000000000
-  innerCavePuzzleOpen: 
-  innerTemplePuzzleOpen: 
+  innerCavePuzzleOpen: 0000000000
+  innerTemplePuzzleOpen: 0000000000
   room5PuzzleOpen: 0000000000
 --- !u!4 &1077004477
 Transform:
@@ -7542,6 +7542,9 @@ MonoBehaviour:
   notificationDisplay: {fileID: 489386083}
   puzzleAnswer1:
   - Felix Willford
+  - FelixWillford
+  - Willford
+  - Felix
   lastRoom: 0
   tweenDelay: 1
   openWindow: []

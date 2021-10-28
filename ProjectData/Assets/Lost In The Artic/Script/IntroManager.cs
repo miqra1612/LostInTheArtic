@@ -14,7 +14,7 @@ public class IntroManager : MonoBehaviour
 
     private void Start()
     {
-        plugIn.onClick.AddListener(OpenIntro2);
+        //plugIn.onClick.AddListener(OpenIntro2);
     }
 
     private void OpenIntro2()

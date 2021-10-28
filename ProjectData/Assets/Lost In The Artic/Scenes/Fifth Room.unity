@@ -687,7 +687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &269288799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,10 +711,22 @@ MonoBehaviour:
   clue3Open: 0
   clue4Open: 0
   clue5Open: 0
+  clue6Open: 0
+  clue7Open: 0
+  clue8Open: 0
+  clue9Open: 0
+  clue10Open: 0
+  clue11Open: 0
   room1PuzzleOpen: 0000000000
+  innerHutPuzzleOpen: 
   room2PuzzleOpen: 0000000000
+  innerStationPuzzleOpen: 
+  innerMortuaryPuzzleOpen: 
   room3PuzzleOpen: 0000000000
+  innerChurchPuzzleOpen: 
   room4PuzzleOpen: 0000000000
+  innerCavePuzzleOpen: 
+  innerTemplePuzzleOpen: 
   room5PuzzleOpen: 
 --- !u!4 &269288800
 Transform:

@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1797}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799824831
@@ -732,9 +732,10 @@ MonoBehaviour:
   continueBtn: {fileID: 2051030669}
   dialogScreen: {fileID: 1920019108}
   dialogSpeed: 0.01
+  firstTimeDelay: 1
   introDialogue:
   - dialog: 'You can hear the captain''s voice: '
-  - dialog: 'You weren''t supposed to arrive for another two months, weren''t you? '
+  - dialog: You weren't supposed to arrive for another two months, were you?
   - dialog: I know, I know. There's some conflict on the station and they requested
       you go in to replace their crew early.
   - dialog: But you know what? They are gonna pay you double for that. If you can
@@ -1059,7 +1060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2051030668
 RectTransform:
   m_ObjectHideFlags: 0
