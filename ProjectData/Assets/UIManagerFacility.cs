@@ -67,7 +67,7 @@ public class UIManagerFacility : MonoBehaviour
 
     void OpenMap(RectTransform panel)
     {
-        GameData.instance.innerHutPuzzleOpen[0] = true;
+        GameData.instance.innerStationPuzzleOpen[0] = true;
 
         ClosePanel();
         OpenPanel(panel);
@@ -91,7 +91,7 @@ public class UIManagerFacility : MonoBehaviour
         {
             SwitchCorrect1(true);
             AnswerCorrect(canAdvance);
-            GameData.instance.innerHutPuzzleOpen[1] = true;
+            GameData.instance.innerStationPuzzleOpen[1] = true;
         }
         else
         {
@@ -103,7 +103,7 @@ public class UIManagerFacility : MonoBehaviour
     // This is a fungtion to activate a clue window 1
     public void ClueWithPuzzle1(RectTransform panel)
     {
-        bool isComplete = GameData.instance.innerHutPuzzleOpen[1];
+        bool isComplete = GameData.instance.innerStationPuzzleOpen[1];
 
         if (isComplete)
         {
